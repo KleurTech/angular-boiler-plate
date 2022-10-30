@@ -1,0 +1,21 @@
+.footer-container {
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0 -2px 5px #ccc;
+    overflow: hidden;
+    padding: 1vh;
+    font-size: 2vh;
+
+    img.icons-new {
+        width: 3vh;
+        height: 3vh;
+        margin-right: 0.75vw;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .footer-container {
+        height: 7vh;
+        font-size: 1.5vh;
+    }
+}

@@ -1,0 +1,39 @@
+@import "../../styles/_variables.scss";
+
+.grid-height {
+    height: 68vh;
+}
+
+.search-cont {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 1rem;
+
+    input {
+        padding: 0.25rem;
+        margin-right: 1.5rem;
+    }
+}
+
+::ng-deep {
+
+    .ag-theme-alpine .ag-header,
+    .ag-theme-alpine .ag-header-row {
+        color: $text-dark;
+        background-color: $s-color;
+    }
+
+    .ag-center-cols-clipper,
+    .ag-center-cols-container,
+    .ag-theme-alpine .ag-row {
+        color: $text-dark;
+        background-color: $p-color;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .grid-height {
+        height: 75vh;
+    }
+}

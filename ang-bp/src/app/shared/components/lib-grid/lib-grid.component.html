@@ -1,0 +1,8 @@
+<!-- AG Grid Angular Component -->
+<div class="search-cont">
+    <input type="text" id="filter-text-box" placeholder="Search..." (input)="onFilterTextBoxChanged()" />
+</div>
+<ag-grid-angular class="ag-theme-alpine grid-height" (selectionChanged)="getSelectedRowData()"
+    (gridReady)="onGridReady($event)" [gridOptions]="gridOptions" rowSelection="single" [rowData]="rowDataCopy"
+    [cacheQuickFilter]="true" [columnDefs]="columnDefs">
+</ag-grid-angular>
