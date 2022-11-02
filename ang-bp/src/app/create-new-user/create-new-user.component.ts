@@ -21,14 +21,14 @@ export class CreateNewUserComponent implements OnInit {
   }
   createUser() {
     if (this.custRelCode === "ABBY101") {
-    //   this._commonService.createUser(this.userName, this.userId, this.userPassword).subscribe({
-    //     next: (res) => {
-    //       sessionStorage.setItem("userEmailId", this.userId)
-    //       sessionStorage.setItem("userId", res.id)
-    //       sessionStorage.setItem("userLoggedIn", "true")
-    //       this._route.navigate(['/home']);
-    //     },
-    //   });
+      //   this._commonService.createUser(this.userName, this.userId, this.userPassword).subscribe({
+      //     next: (res) => {
+      sessionStorage.setItem("userEmailId", this.userId)
+      // sessionStorage.setItem("userId", res.id)
+      sessionStorage.setItem("userLoggedIn", "true")
+      this._route.navigate(['/home']);
+      //     },
+      //   });
     }
   }
 }

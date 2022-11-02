@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   deployUrl: 'http://localhost:3000/api/',
-  // deployedUrl: 'http://localhost:3000/api/',
-  deployedUrl: "https://irm-be.azurewebsites.net/api/",
+  deployedUrl: 'http://localhost:3000/api/',
+  // deployedUrl: "https://irm-be.azurewebsites.net/api/",
   // deployedUrl: 'https://localhost:7216/api/',
   // deployedUrl: 'https://pitchdeck20221001000128.azurewebsites.net/api/',
 };

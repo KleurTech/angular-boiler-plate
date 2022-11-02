@@ -15,17 +15,17 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void { }
   loginUser() {
-    this._apiService.loginUser(this.userId, this.userPassword).subscribe({
-      next: (res) => {
+    // this._apiService.loginUser(this.userId, this.userPassword).subscribe({
+      // next: (res) => {
         sessionStorage.setItem("userEmailId", this.userId)
-        sessionStorage.setItem("userId", res.id)
+        // sessionStorage.setItem("userId", res.id)
         sessionStorage.setItem("userLoggedIn", "true")
         this._route.navigate(['/home']);
-      },
-      error: () => {
-        this._commonService.showSnackBar("Invalid Credentials");
-      }
-    });
+      // },
+      // error: () => {
+        // this._commonService.showSnackBar("Invalid Credentials");
+      // }
+    // });
   }
   newUserRedirect() {
     this._route.navigate(['/new-user-login']);
